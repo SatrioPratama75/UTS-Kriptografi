@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        .wrap{
+            margin: 0% 20%;
+            padding: 1%;
+            border: 3px solid black;
+            background-color: #fff;
+        }
+        .tittle {
+            text-align: center;
+        }
+        .tittle h1,
+        h2 {
+            margin: 0;
+        }
+        .logout{
+            position: absolute;
+            top: 1%;
+            right: 15%;
+            background-color: red;
+            border-radius: 10%;
+        }
+        .logout a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 30px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="tittle">
+            <h1>SOAL UJIAN TENGAH SEMESTER (UTS)</h1>
+            <h2>Semester Ganjil TA 2023 / 2024</h2>
+        </div>
+        <hr>
+        <p>Mata Kuliah : Cryptography TI.21.A.1 & TI.21.A.2</p>
+        <p>Program Studi : Teknik Informatika</p>
+        <p>Dosen Pengampu : M Najamuddin Dwi M,S.Kom., M.Kom</p>
+        <p>Waktu : 7 Hari</p>
+        <p>Sifat Ujian : Project</p>
+        <p>Hari/Tanggal : Selasa, 7 November 2023</p>
+        <hr>
+        <p>Nama : Satrio Pratama Wijaya</p>
+        <p>NIM : 312110223</p>
+        <p>Kelas : TI.21.A1</p>
+        <hr>
+        <p>
+            Dalam rangka meningkatkan keamanan pada sistem login aplikasi web, Anda diminta untuk mengimplementasikan sebuah sistem enkripsi berbasis Polyalphabetic Cipher, yang merupakan prinsip dasar dari Vigenère Cipher. Polyalphabetic Cipher adalah metode enkripsi yang menggunakan berbagai substitusi alfabetik pada posisi yang berbeda dari teks yang akan dienkripsi. Metode ini memiliki tujuan untuk menghindari pola dalam enkripsi yang dapat digunakan untuk menganalisis dan memecahkan cipher.
+        </p>
+        <p>Spesifikasi Tugas:</p>
+        <ul>
+            <li>
+                Implementasikan fungsi polyEncrypt(text, key) yang menerima dua parameter: text yang merupakan string berisi password yang diinput oleh pengguna, dan key yang merupakan string berisi kunci enkripsi yang telah disepakati. Fungsi ini harus menghasilkan output berupa string yang telah dienkripsi menggunakan metode Polyalphabetic Cipher.
+            </li>
+            <li>
+                Implementasikan fungsi polyDecrypt(encryptedText, key) yang akan digunakan server untuk mendekripsi password yang telah dienkripsi. Fungsi ini menerima dua parameter: encryptedText yang merupakan string hasil enkripsi, dan key yang merupakan string kunci yang sama saat proses enkripsi. Fungsi ini harus mengembalikan string asli sebelum dienkripsi.
+            </li>
+            <li>
+                Enkripsi harus dapat menangani dan mempertahankan case dari karakter-karakter (huruf besar dan huruf kecil) serta mengecualikan karakter-karakter non-alfabetik sehingga karakter tersebut tidak dienkripsi dan diletakkan apa adanya pada hasil enkripsi.
+            </li>
+            <li>Pastikan bahwa kunci diulang sesuai kebutuhan hingga mencapai panjang yang dibutuhkan untuk enkripsi password.</li>
+            <li>Sistem harus efisien dalam hal waktu dan memori, serta mengimplementasikan praktik-praktik pemrograman yang baik dan kode yang mudah dibaca.</li>
+        </ul>
+        <hr>
+        <p>Kriteria Penilaian:</p>
+        <ol>
+            <li>Akurasi Fungsi (40%): Fungsi enkripsi dan dekripsi harus menghasilkan output yang tepat dan dapat diandalkan.</li>
+            <li>Efisiensi Algoritma (30%): Kode harus efisien dan tidak menggunakan lebih banyak sumber daya daripada yang diperlukan.</li>
+            <li>Keamanan Implementasi (20%): Solusi harus mempertimbangkan aspek-aspek keamanan kriptografi modern.</li>
+            <li>Kualitas Kode (10%): Kode harus ditulis dengan rapi, struktur yang jelas, dan komentar yang membantu pemahaman.</li>
+        </ol>
+    </div>
+    <div class="logout">
+        <a href="logout.php">Keluar</a>
+    </div>
+</body>
+
+</html>

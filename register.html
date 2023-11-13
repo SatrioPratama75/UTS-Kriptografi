@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Akun</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #eee;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap-reg {
+            background-color: #fff;
+            border: 3px solid black;
+            border-radius: 4%;
+            padding: 0% 5%;
+        }
+
+        .wrap-reg h2 {
+            text-align: center;
+            margin: 5% 0%;
+        }
+
+        .wrap-reg form {
+            margin: 5% 0%;
+        }
+
+        .act-reg {
+            width: 70px;
+            height: 20px;
+            position: relative;
+            top: 10px;
+            left: 85px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 5%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap-reg">
+            <h2>Registrasi Akun</h2>
+            <form action="register_process.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" name="username" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
+
+                <input type="submit" class="act-reg" value="Daftar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
